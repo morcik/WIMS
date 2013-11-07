@@ -53,11 +53,12 @@ GEM
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.2)
-    factory_girl (4.3.0)
+    factory_girl (4.2.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     ffi (1.9.3)
-    formtastic (2.2.1)
-      actionpack (>= 3.0)
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -141,6 +142,9 @@ GEM
       multi_json (~> 1.0)
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
+    simple_form (3.0.0)
+      actionpack (>= 4.0.0, < 4.1)
+      activemodel (>= 4.0.0, < 4.1)
     slop (3.4.6)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -178,8 +182,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.0.0.0)
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.1)
-  factory_girl
-  formtastic
+  factory_girl_rails
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails (= 3.0.4)
@@ -191,6 +194,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.1)
   sdoc
   selenium-webdriver (= 2.35.1)
+  simple_form
   sqlite3 (= 1.3.8)
   turbolinks
   uglifier (>= 1.3.0)

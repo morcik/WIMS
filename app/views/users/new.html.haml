@@ -1,2 +1,10 @@
 %h1 Signup
-%p tu będzie formularz!
+.row
+  .span6.offset3
+    = simple_form_for (@user) do |f|
+      = f.error_notification
+      = f.input :name
+      = f.input :email, placeholder: 'user@domain.com'
+      = f.input :password,              :as => :password
+      = f.input :password_confirmation, :as => :password
+      = f.submit "Create my account", class: "btn btn-large btn-primary"

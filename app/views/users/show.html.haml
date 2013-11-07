@@ -1,6 +1,9 @@
-%p
-  Name: 
-  = @user.name
-%p
-  Email:
-  = @user.email
+.row
+  %aside.span4
+    %section
+      %h1
+        =gravatar_for @user
+        = @user.name
+      %p
+        email:
+        = @user.email
