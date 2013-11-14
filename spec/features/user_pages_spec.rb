@@ -33,8 +33,8 @@ describe "User pages" do
       before do
         fill_in "Name",         with: "Example User"
         fill_in "Email",        with: "user@example.com"
-        fill_in "Password",     with: "foobar"
-        fill_in "Confirmation", with: "foobar"
+        fill_in "Password",     with: "foobar", match: :prefer_exact 
+        fill_in "Password confirmation", with: "foobar"
       end
 
       it "should create a user" do
