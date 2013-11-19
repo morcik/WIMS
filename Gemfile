@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
@@ -13,11 +12,14 @@ gem 'jquery-rails', '3.0.4'
 gem 'sass-rails', '~> 4.0.1'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'mongo_mapper'
+gem 'bson_ext'
+gem 'activeresource'
+gem 'libv8'
 
 group :test, :development do
   
   gem 'rspec-rails' , '2.13.1'
-  gem 'sqlite3', '1.3.8'
   gem 'capybara', '2.1.0'
 end
 
@@ -32,7 +34,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
