@@ -1,10 +1,10 @@
-require 'mongo_mapper'
 class User 
-  include MongoMapper::Document
+  include Mongoid::Document
   
-  key :name
-  key :email
-  key :password
+  field :name
+  field :email
+  field :password
+  field :password_confirmation
 
   before_save {self.email = email.downcase}
   validate :name, presence: true 

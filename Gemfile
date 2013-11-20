@@ -12,10 +12,10 @@ gem 'jquery-rails', '3.0.4'
 gem 'sass-rails', '~> 4.0.1'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-gem 'mongo_mapper'
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
 gem 'activeresource'
-gem 'libv8'
+
 
 group :test, :development do
   
