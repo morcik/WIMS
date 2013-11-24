@@ -26,6 +26,7 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do 

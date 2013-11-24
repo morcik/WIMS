@@ -167,3 +167,6 @@ input {
   @extend .control-group;
   @extend .error;
 }
+.alert-error{
+  @extend .alert-danger
+}

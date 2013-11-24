@@ -1,1 +1,11 @@
 %h1 Sign in
+.row
+  .span6
+    = simple_form_for(:session, url: sessions_path) do |f|
+      = f.input :email 
+      = f.input :password, :as => :password
+      = f.submit "sign in", class: "btn btn-large btn-primary"
+
+%p 
+  not registered yet? 
+  =link_to "Sign up now!", signup_path
