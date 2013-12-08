@@ -6,9 +6,8 @@ class User
   field :password_digest
   field :remember_token
   
-
-  before_save {self.email = email.downcase}
   before_create :create_remember_token
+  before_save {self.email = email.downcase}
   validates :name, presence: true 
   validates :email, presence: true, uniqueness: {case_sensitive: false}  
   validates :password, length: {minimum: 6}, confirmation: true
